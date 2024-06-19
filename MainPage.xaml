@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="maui_navigation_sandbox.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <CheckBox x:Name="AnimateCheckBox" />
+                <Label Text="Animate?" />
+            </HorizontalStackLayout>
+
+            <Button
+                Text="My Global Page Navigation"
+                Clicked="MyGlobalPageClicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="My Content Page Navigation"
+                Clicked="MyContentPageClicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
